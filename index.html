@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Distritos Termicos</title>
+</head>
+<body>
+
+  
+  <h1 class="form-title">DT - Uniremington</h1>
+
+  <div class="container">
+      <form id="form">
+
+        <div class="input-container">
+          <label>Digite el Caudal:</label>
+          <input name="caudal" type='number' placeholder='Ingrese los datos...' required step="0.01" />
+        </div>
+
+        <div>
+            <label>Digite la Temperatura de entrada:</label>
+          <input name="tempEntrada" type='number' placeholder='Ingrese los datos...' required step="0.01" />
+        </div>
+
+        <div>
+            <label>Digite la Temperatura de salida:</label>
+            <input name="tempSalida" type='number' placeholder='Ingrese los datos...' required step="0.01" />
+        </div>
+
+        <div>
+            <label>Digite el factor de Servicio:</label>
+            <input name="servicio" type='number' placeholder='Ingrese los datos...' required step="0.01" />
+        </div>
+
+        <div>
+          <div >
+            <label>Seleccione los Chiller centrifugos:</label>
+            <select name="chillerCentrifugo" required >
+                <option value="500">500</option>
+                <option value="750">750</option>
+                <option value="1000">1000</option>
+            </select>
+          </div>
+
+          <div >
+            <label >Digite la Cantidad:</label>
+            <input name="cantChillerCentrifugo" type='number' placeholder='Ingrese los datos...' required  step="0.01" />
+          </div>
+        </div>
+
+        <div >
+          <div >
+            <label >Seleccione los Chiller absorcion:</label>
+            <select name="chillerAbsorcion" required>
+                <option value="500">500</option>
+                <option value="750">750</option>
+                <option value="1000">1000</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Digite la Cantidad:</label>
+            <input name="cantChillerAbsorcion" type='number' placeholder='Ingrese los datos...' required  step="0.01" />
+          </div>
+        </div>
+
+        <div class="form-button">
+          <button class="btn">Calcular</button>
+        </div>
+       
+      </form>
+    </div>
+
+    <div id="container" class="table-container"></div>
+
+    <script type="module" src="./javascript/main.js"></script>
+    
+</body>
+</html>

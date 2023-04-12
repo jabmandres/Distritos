@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+form label {
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    border: 1;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+form select {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    border: 1;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #081f2d;
+    border-radius: 29px;
+    border: 1px solid #081F2D;
+    color: white;
+    font-size: 15px;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #081F2D;
+    border-color: #081F2D;
+    transition: 0.3s;
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.table-title{
+    padding: 20px;
+}
+
+.table-content{
+    font-size: 20px;
+    padding: 20px;
+}
+
+table th{
+    background-color: #081f2d;
+    color: white;
+}
+
